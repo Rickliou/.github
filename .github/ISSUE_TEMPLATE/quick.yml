@@ -1,0 +1,17 @@
+name: 速記
+description: 手機或臨時想到時先記下來，之後再整理成需求或問題回報
+title: "[速記] "
+labels: ["待整理"]
+body:
+  - type: textarea
+    id: note
+    attributes:
+      label: 內容
+      description: 一句話、截圖或連結都可以；整理時會補齊範圍與驗收條件
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 類型
+      options: [需求, 問題, 討論, 不確定]

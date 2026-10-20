@@ -14,8 +14,9 @@
 | --- | --- |
 | `.github/ISSUE_TEMPLATE/feature.yml` | 需求：目的、範圍與排除、驗收條件、依賴、風險 |
 | `.github/ISSUE_TEMPLATE/bug.yml` | 問題回報：環境、現象、預期行為、修好的判定 |
+| `.github/ISSUE_TEMPLATE/quick.yml` | 速記：只有「內容」必填，給手機或臨時記錄用；自動加「待整理」，補齊開工欄位前不開工 |
 | `.github/pull_request_template.md` | PR：對應 issue（Closes／Refs）、逐條驗收證據、高風險條件、未驗證事項、部署與回滾 |
-| `tracking/init-repo.sh` | 替 repo 建立 5 個工作追蹤 label |
+| `tracking/init-repo.sh` | 替 repo 建立 6 個工作追蹤 label |
 | `tracking/AGENTS-tracking.md` | 給 AI 的工作追蹤規則原稿與專案設定範本 |
 
 ## 新專案套用步驟
