@@ -1,0 +1,68 @@
+name: 問題回報
+description: 實際使用或測試時看到的異常
+title: "[問題] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: env
+    attributes:
+      label: 環境
+      options: [正式使用中, 測試環境, 本機開發]
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: 發生在哪裡、何時、哪個版本
+      placeholder: "例如：mitro01，2026-10-07 18:22，commit abc1234"
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: 影響
+      options:
+        - 資料、硬體或安全可能受影響
+        - 功能不正常
+        - 只影響顯示或紀錄
+        - 不確定
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 現象與重現步驟
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 預期行為
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 修好的判定（驗收條件）
+      description: 怎樣算修好；含要一併確認不能壞掉的行為
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: checkboxes
+    id: flags
+    attributes:
+      label: 風險與實際驗收
+      description: 依內容判斷；AI 開工時會再核對
+      options:
+        - label: 修正會碰到資料、硬體、安全或對外行為（加「高風險」）
+        - label: 要在實際使用環境確認才算修好（加「需實際驗收」）
+  - type: textarea
+    id: log
+    attributes:
+      label: 相關 log
+      render: text
+  - type: textarea
+    id: done
+    attributes:
+      label: 已做的處置

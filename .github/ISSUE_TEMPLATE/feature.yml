@@ -1,0 +1,64 @@
+name: 需求
+description: 新功能或行為改變
+title: "[需求] "
+labels: ["需求"]
+body:
+  - type: markdown
+    attributes:
+      value: 小改動每欄一句話即可；沒有的項目寫「無」。
+  - type: textarea
+    id: story
+    attributes:
+      label: 目的與預期行為
+      description: 解決誰的什麼問題；完成後行為會變成怎樣
+      placeholder: 身為……，我希望……，讓我……
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 本次範圍與排除事項
+      description: 這次做到哪裡；哪些留給其他 issue
+      value: |
+        - 範圍：
+        - 排除：
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 驗收條件
+      description: 寫成可以檢查的句子，含必要的異常與安全情境；有真實資料或實際場景就直接寫進來
+      value: |
+        - [ ]
+        - [ ] 異常／安全情境：
+    validations:
+      required: true
+  - type: textarea
+    id: deps
+    attributes:
+      label: 依賴、基準分支與待決問題
+      value: |
+        - 依賴：無
+        - 基準分支：main
+        - 待決問題：無
+    validations:
+      required: true
+  - type: checkboxes
+    id: flags
+    attributes:
+      label: 風險與實際驗收
+      description: 依內容判斷；AI 開工時會再核對，不只看這裡的勾選
+      options:
+        - label: 會影響資料、硬體、安全或對外行為（加「高風險」）
+        - label: 要在實際使用環境確認才算完成（加「需實際驗收」）
+  - type: textarea
+    id: risk
+    attributes:
+      label: 預期改變與安全條件
+      description: 高風險時寫明「預期會改變的行為」與「必須維持的安全條件」；不適用寫「無」
+  - type: textarea
+    id: plan
+    attributes:
+      label: 設計文件
+      description: 大變更附上設計文件或 ADR 連結；小改動可留空
