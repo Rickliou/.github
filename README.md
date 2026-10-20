@@ -21,10 +21,11 @@
 
 ## 手機開速記
 
-GitHub app 不會顯示共用表單，按「新增 issue」直接進空白編輯畫面。兩種做法：
+GitHub app 與手機版網頁（Safari）都不顯示 issue 表單，按「新增 issue」直接進空白編輯畫面；`?template=quick.yml` 在手機上也無效。改用網址參數：
 
-- **建議**：手機瀏覽器打開 `https://github.com/Rickliou/<repo>/issues/new?template=quick.yml`，用「加入主畫面」存成捷徑，會自動帶「[速記]」標題與「待整理」label。
+- **建議**：手機瀏覽器打開 `https://github.com/Rickliou/<repo>/issues/new?title=%5B%E9%80%9F%E8%A8%98%5D%20&labels=%E5%BE%85%E6%95%B4%E7%90%86`（標題預填「[速記] 」、預選「待整理」label），用「加入主畫面」存成捷徑。label 參數只對有寫入權限的人生效。
 - 用 app 開空白 issue 時，標題以「速記」開頭；整理時會用 `速記 in:title -label:待整理` 搜到並補上 label。
+- 電腦上照常選「速記」表單。
 
 ## 新專案套用步驟
 
