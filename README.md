@@ -19,6 +19,14 @@
 | `tracking/init-repo.sh` | 替 repo 建立 6 個工作追蹤 label |
 | `tracking/AGENTS-tracking.md` | 給 AI 的工作追蹤規則原稿與專案設定範本 |
 
+## 手機開速記
+
+GitHub app 與手機版網頁（Safari）都不顯示 issue 表單，按「新增 issue」直接進空白編輯畫面；`?template=quick.yml` 在手機上也無效。改用網址參數：
+
+- **建議**：手機瀏覽器打開 `https://github.com/Rickliou/<repo>/issues/new?title=%5B%E9%80%9F%E8%A8%98%5D%20&labels=%E5%BE%85%E6%95%B4%E7%90%86`（標題預填「[速記] 」、預選「待整理」label），用「加入主畫面」存成捷徑。label 參數只對有寫入權限的人生效。
+- 用 app 開空白 issue 時，標題以「速記」開頭；整理時會用 `速記 in:title -label:待整理` 搜到並補上 label。
+- 電腦上照常選「速記」表單。
+
 ## 新專案套用步驟
 
 1. 在 Rickliou 下開 repo
