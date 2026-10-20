@@ -19,6 +19,13 @@
 | `tracking/init-repo.sh` | 替 repo 建立 6 個工作追蹤 label |
 | `tracking/AGENTS-tracking.md` | 給 AI 的工作追蹤規則原稿與專案設定範本 |
 
+## 手機開速記
+
+GitHub app 不會顯示共用表單，按「新增 issue」直接進空白編輯畫面。兩種做法：
+
+- **建議**：手機瀏覽器打開 `https://github.com/Rickliou/<repo>/issues/new?template=quick.yml`，用「加入主畫面」存成捷徑，會自動帶「[速記]」標題與「待整理」label。
+- 用 app 開空白 issue 時，標題以「速記」開頭；整理時會用 `速記 in:title -label:待整理` 搜到並補上 label。
+
 ## 新專案套用步驟
 
 1. 在 Rickliou 下開 repo
