@@ -14,7 +14,7 @@
 | --- | --- |
 | `.github/ISSUE_TEMPLATE/feature.yml` | 需求：目的、範圍與排除、驗收條件、依賴、風險 |
 | `.github/ISSUE_TEMPLATE/bug.yml` | 問題回報：環境、現象、預期行為、修好的判定 |
-| `.github/ISSUE_TEMPLATE/quick.yml` | 速記：只有「內容」必填，給手機或臨時記錄用；自動加「待整理」，補齊開工欄位前不開工 |
+| `.github/ISSUE_TEMPLATE/quick.yml` | 隨手速記：只有「內容」必填，給手機或臨時記錄用；自動加「待整理」，補齊開工欄位前不開工 |
 | `.github/pull_request_template.md` | PR：對應 issue（Closes／Refs）、逐條驗收證據、高風險條件、未驗證事項、部署與回滾 |
 | `tracking/init-repo.sh` | 替 repo 建立 6 個工作追蹤 label |
 | `tracking/AGENTS-tracking.md` | 給 AI 的工作追蹤規則原稿與專案設定範本 |
@@ -25,7 +25,7 @@ GitHub app 與手機版網頁（Safari）都不顯示 issue 表單，按「新�
 
 - **建議**：手機瀏覽器打開 `https://github.com/Rickliou/<repo>/issues/new?title=%5B%E9%80%9F%E8%A8%98%5D%20&labels=%E5%BE%85%E6%95%B4%E7%90%86`（標題預填「[速記] 」、預選「待整理」label），用「加入主畫面」存成捷徑。label 參數只對有寫入權限的人生效。
 - 用 app 開空白 issue 時，標題以「速記」開頭；整理時會用 `速記 in:title -label:待整理` 搜到並補上 label。
-- 電腦上照常選「速記」表單。
+- 電腦上照常選「隨手速記」表單（表單名稱須 3 字以上，否則 GitHub 會把它從選單藏起來）。
 
 ## 新專案套用步驟
 
